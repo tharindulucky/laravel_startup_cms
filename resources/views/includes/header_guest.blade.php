@@ -48,10 +48,10 @@
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
+
                     @if (Auth::guest())
                         <li><a href="{{ route('login') }}">Login</a></li>
                     @else
-                        <li><a href="{{route('dashboard')}}">Dashboard</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                 Welcome! <span class="caret"></span>
@@ -78,11 +78,3 @@
 
     <div class="container">
         <div class="row">
-
-            <div class="col-md-3">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        @include('includes.nav')
-                    </div>
-                </div>
-            </div>
